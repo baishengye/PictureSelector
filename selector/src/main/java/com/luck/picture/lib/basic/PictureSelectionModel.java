@@ -534,6 +534,19 @@ public final class PictureSelectionModel {
     }
 
     /**
+     * @param itemShowName PictureSelector need show item file name
+     *                      by true or false
+     *                      <p>
+     *                      Use {@link SelectModeConfig}
+     *                      </p>
+     *
+     */
+    public PictureSelectionModel setItemShowName(boolean itemShowName) {
+        selectionConfig.itemShowName = itemShowName;
+        return this;
+    }
+
+    /**
      * Compatible with Fragment fallback scheme, default to true
      *
      * @param isNewKeyBackMode

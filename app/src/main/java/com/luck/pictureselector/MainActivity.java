@@ -545,10 +545,12 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
                                 .isMaxSelectEnabledMask(cbEnabledMask.isChecked())
                                 .isDirectReturnSingle(cb_single_back.isChecked())
                                 .setMaxSelectNum(maxSelectNum)
+                                .setItemShowName(true)
                                 .setMaxVideoSelectNum(maxSelectVideoNum)
                                 .setRecyclerAnimationMode(animationMode)
                                 .isGif(cb_isGif.isChecked())
                                 .setSelectedData(mAdapter.getData());
+
                         forSelectResult(selectionModel);
                     }
                 } else {

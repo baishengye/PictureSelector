@@ -213,6 +213,12 @@ public class BaseRecyclerMediaHolder extends RecyclerView.ViewHolder {
                 }
             }
         });
+        
+        if(selectorConfig.itemShowName){
+            tvCheck.setText(media.getFileName());
+        }else {
+            tvCheck.setText("");
+        }
     }
 
     /**

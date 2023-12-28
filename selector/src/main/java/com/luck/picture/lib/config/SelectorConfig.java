@@ -62,6 +62,7 @@ public final class SelectorConfig {
     public int requestedOrientation;
     public boolean isCameraAroundState;
     public int selectionMode;
+    public boolean itemShowName;
     public int maxSelectNum;
     public int minSelectNum;
     public int maxVideoSelectNum;
