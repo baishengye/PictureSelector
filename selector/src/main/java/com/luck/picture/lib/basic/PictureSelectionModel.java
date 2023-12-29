@@ -547,6 +547,19 @@ public final class PictureSelectionModel {
     }
 
     /**
+     * @param needBanner PictureSelector need show item file name
+     *                      by true or false
+     *                      <p>
+     *                      Use {@link SelectModeConfig}
+     *                      </p>
+     *
+     */
+    public PictureSelectionModel setNeedBanner(boolean needBanner) {
+        selectionConfig.needBanner = needBanner;
+        return this;
+    }
+
+    /**
      * Compatible with Fragment fallback scheme, default to true
      *
      * @param isNewKeyBackMode

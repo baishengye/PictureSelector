@@ -17,6 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SimpleItemAnimator;
 
@@ -861,6 +862,7 @@ public class PictureSelectorFragment extends PictureCommonFragment
                 }
             }
 
+            @SuppressLint("MissingPermission")
             @Override
             public void onItemLongClick(View itemView, int position) {
                 if (mDragSelectTouchListener != null && selectorConfig.isFastSlidingSelect) {

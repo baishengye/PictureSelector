@@ -1,5 +1,6 @@
 package com.luck.picture.lib.adapter.holder;
 
+import android.graphics.Color;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -62,6 +63,10 @@ public class AudioViewHolder extends BaseRecyclerMediaHolder {
 
     @Override
     protected void loadCover(String path) {
-        ivPicture.setImageResource(R.drawable.ps_audio_placeholder);
+        if(selectorConfig.needBanner){
+            ivPicture.setImageResource(R.drawable.ps_audio_placeholder);
+        }else {
+            ivPicture.setBackgroundColor(Color.parseColor("#868686"));
+        }
     }
 }

@@ -16,7 +16,7 @@ import com.luck.picture.lib.R;
  * @date：2020/8/25 10:32 AM
  * @describe：MediumBoldTextView
  */
-public class MediumBoldTextView extends AppCompatTextView {
+public class MediumBoldTextView extends BSYDrawableTextView {
     private float mStrokeWidth = 0.6F;
 
     public MediumBoldTextView(Context context) {
